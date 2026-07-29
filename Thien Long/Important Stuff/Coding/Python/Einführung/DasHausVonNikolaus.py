@@ -1,0 +1,18 @@
+import turtle
+makeTurtle()
+
+forward(90)
+right(135)
+forward(120)
+left(135)
+forward(85)
+left(90)
+forward(87)
+right(135)
+forward(64)
+right(90)
+forward(62)
+right(90)
+forward(125)
+left(135)
+forward(90)

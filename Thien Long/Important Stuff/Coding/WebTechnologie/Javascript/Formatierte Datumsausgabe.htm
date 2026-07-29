@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- Formatierte Datumsausgabe -->
+<html>
+  <head>
+    <title>Listing 5.1</title>
+    <script type="text/javascript">
+        monate = new Array("Januar","Februar","März","April",
+          "Mai","Juni","Juli","August","September","Oktober",
+          "November","Dezember");
+        wochentage = new Array("Sonntag","Montag","Dienstag",
+          "Mittwoch","Donnerstag","Freitag","Samstag");
+        datum = new Date();
+        wtg = datum.getDay();
+        tag = datum.getDate();
+        mon = datum.getMonth();
+        jhr = datum.getFullYear();
+        ausgabe = wochentage[wtg]+", der "+tag+". "+monate[mon]+" "+jhr;
+        document.write(ausgabe);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

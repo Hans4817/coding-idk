@@ -1,0 +1,18 @@
+<html>
+<body>
+<p>Bitte tragen sie gewuenschten Rechnen Operationen ein.</p>
+<form action = "ArimetischeOperatoren1.php" method = "post">
+
+<p><input name ="w1" /> Wert 1<p>
+<p><input name ="w2" /> Wert 2<p>
+<p><input type ="radio" name="oper" value="+" checked="checked" /> Addition</p>
+<p><input type ="radio" name="oper" value="-"/> Subtraktion</p>
+<p><input type ="radio" name="oper" value="*"/> Multiplaktion</p>
+<p><input type ="radio" name="oper" value="/"/> Division</p>
+<p><input type ="submit" />
+<input type ="reset" /></p>
+
+
+</form>
+</body>
+</html>

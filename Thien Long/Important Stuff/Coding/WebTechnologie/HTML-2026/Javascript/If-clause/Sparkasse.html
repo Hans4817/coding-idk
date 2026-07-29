@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jköfdsa224</title>
+</head>
+<body>
+    <script>
+        let emailInput, passwordInput;
+        let capital = 2000, liftUp;
+        let pinInput, pin = 3141;
+        let pinCorrect = false; // Status, ob die PIN korrekt eingegeben wurde
+
+        // 2. PIN-Abfrage (3 Versuche)
+        for (let i = 3; i >= 1; i--) {
+            pinInput = prompt("Geben Sie Ihre PIN ein. Sie haben noch " + i + " Versuche:");
+            
+            if (Number(pinInput) === pin) {
+                pinCorrect = true;
+                break; // Schleife sofort beenden, wenn die PIN korrekt ist
+            }
+        }
+
+         // 3. Auszahlung oder Sperrung
+        if (pinCorrect) {
+            liftUp = Number(prompt("Wie viel möchten Sie abheben? Sie haben noch " + capital + " Euro."));
+            
+            if (isNaN(liftUp) || liftUp <= 0) {
+                document.write("Ungültiger Betrag eingegeben.");
+            } else if (liftUp > capital) {
+                document.write("Ihr Guthaben reicht für diese Transaktion nicht aus.");
+            } else {
+                capital -= liftUp;
+                document.write("Sie haben " + liftUp + " Euro bekommen.");
+                document.write("<br>");
+                document.write("Sie haben noch " + capital + " Euro übrig.");
+            }
+        } 
+        else {
+            document.write("Ihre Karte wurde gesperrt.");
+        }
+    </script>
+</body>
+</html>

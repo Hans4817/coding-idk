@@ -1,0 +1,163 @@
+
+/* breite der gesamtkonstruktion in pixel */
+#breitefix {width:882px}
+
+
+body
+{margin-top: 20px; margin-left: 0px; margin-right: 0px;margin-bottom: 40px;        background-color:#e6e6e6;
+}
+
+
+h2{ color:#b30202;
+margin-bottom:40px;letter-spacing:2px;
+font-family: Courier New, Courier,monospace, serif;
+font-size: 24px;
+}
+
+.haupt {border:solid 12px #fff;
+}
+
+
+#top1 {height:0px;
+background-color:#b30202;
+height:60px;
+width:100%;text-align:center;
+}
+
+#top2 {background-image:url(images/landschaft.jpg);
+background-repeat:no-repeat;
+height:320px;
+background-color:#b30202;
+background-position: right 50%;
+border-left:solid 20px #000;border-right:solid 20px #000;
+}
+
+
+#filmoben {background-image:url(images/film.jpg);
+height:79px;
+background-repeat:no-repeat;
+background-color:#000;
+background-position:center top;
+}
+
+#filmunten {background-image:url(images/film.jpg);
+height:79px;
+background-repeat:repeat-x;
+background-color:#000;
+background-position:left top;
+}
+
+
+
+#top3 {
+background-color:#b30202;
+height:40px;
+color:#56686D;
+width:100%;
+vertical-align:middle;
+}
+
+
+
+#name {height:0px;;
+letter-spacing:2px;
+color:#fff;
+font-family: Courier New, Courier,monospace, serif;
+font-size:26px;
+}
+
+
+#inhalt {
+text-align:justify;
+height:900px;
+padding-top: 60px; padding-bottom: 80px;
+padding-left: 40px;padding-right:40px;
+background-color:#fff;
+width:100%;
+vertical-align:top;
+color:#000;
+font-size: 17px;line-height: 20px;
+font-family: arial,tahoma,verdana,helvetica, sans-serif;
+}
+
+
+
+
+#fuss {font-size: 15px;line-height: 20px;
+color:#fff;background-color:#b30202;
+letter-spacing:0px;
+font-family: Courier New, Courier,monospace, serif;
+height:140px;
+text-align:center;
+width:100%;
+
+
+}
+
+
+
+/* scrolleiste internet explorer ab vers.5.5 */
+
+body
+{scrollbar-arrow-color: #535353; scrollbar-base-color: #fff;
+scrollbar-highlight-color : #535353; scrollbar-shadow-color : #fff;
+SCROLLBAR-TRACK-COLOR: #EFEFEF;}
+
+
+
+/* ====================== NAVIGATION =================== */
+
+
+/* menue oben */
+
+#menu1 a, #menu1 a:visited , #menu1 a:active {display: block;
+color:#fff;
+font-size: 17px;line-height: 20px;
+font-family: Courier New, Courier,monospace, serif;
+padding-left: 10px;padding-right: 10px; padding-bottom: 0px; padding-top:0px;
+margin-left: 0px;margin-right: 0px;
+height:40px;
+line-height:40px;
+text-align:center;
+background-color:#;
+text-decoration:none ;
+}
+
+#menu1 a:hover {color:#fff; text-decoration:none ;
+background-color:#000
+}
+
+
+
+/* menue ganz oben links */
+
+#menu2 a , #menu2 a:visited , #menu2 a:active {display:block;
+background-color:#;
+color:#fff;
+text-decoration:none ;
+text-align:center;
+width:300px;
+border-bottom:dashed 0px #fff;
+font-size: 17px;line-height: 24px;
+font-family: Courier New, Courier,monospace, serif;
+letter-spacing:1px;
+}
+
+#menu2 a:hover{
+background:transparent;
+color:#EFEFEF;
+text-decoration:none ;
+letter-spacing:5px;
+}
+
+
+
+
+/* allgemeine links im text */
+
+a:link, a:visited, a:active{ font-size: 17px;line-height: 20px;
+font-family: arial,tahoma,verdana,helvetica, sans-serif;
+text-decoration:underline;color:#000;}
+
+a:hover{ text-decoration:none;background-color:#000;
+color:#fff;text-decoration:none;}

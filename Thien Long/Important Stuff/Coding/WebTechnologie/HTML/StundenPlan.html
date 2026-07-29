@@ -1,0 +1,138 @@
+<html>
+<head>
+<title> StundenPlan </title>
+</head>
+
+<style type="text/CSS">
+ body {background-color:White}
+
+</style>
+ 
+
+ 
+
+<table style="background-color:#ffa400;" border="1" widh="75%" height="0%" cellspacing="1" cellpadding="20	">
+<center>
+<p style="font-size:50px; color:black;">StundenPlan für Heute.</p>
+</center>
+
+<script type="text/javascript">
+        monate = new Array("Januar","Februar","März","April",
+          "Mai","Juni","Juli","August","September","Oktober",
+          "November","Dezember");
+        wochentage = new Array("Sonntag","Montag","Dienstag",
+          "Mittwoch","Donnerstag","Freitag","Samstag");
+        datum = new Date();
+        wtg = datum.getDay();
+        tag = datum.getDate();
+        mon = datum.getMonth();
+        jhr = datum.getFullYear();
+        ausgabe = wochentage[wtg]+", der "+tag+". "+monate[mon]+" "+jhr;
+		
+        document.write(ausgabe);
+    </script>
+
+
+
+ <tr>
+ 
+   <th>Uhrzeit</th>
+ <th>Stunde</th>
+   <th>Montag</th>
+   <th>Dienstag</th>
+   <th>Mittwoch</th>
+   <th>Donnerstag</th>
+   <th>Freitag</th>
+   
+ </tr>
+
+ <tr>
+ <th>8:10-8:55</th>
+   <th>1.Stunde</th>
+   <th bgcolor="black">Sport</th>
+   <th bgcolor="yellow">Mathematik</th>
+   <th bgcolor="red">Deutsch</th>
+   <th bgcolor="red">Deutsch</th>
+   <th bgcolor="grey">WP fach</th>
+   
+ </tr>
+ 
+<tr>
+<th>9:00-9:45</th>
+   <th>2.Stunde</th>
+   <th bgcolor="black">Sport</th>
+   <th bgcolor="pink">Gesellschaftslehre</th>
+   <th bgcolor="red">Deutsch</th>
+   <th bgcolor="orange">Englisch</th>
+   <th bgcolor="grey">WP fach</th>
+   
+ </tr>
+ 
+ <tr>
+ <th>9:45-10:05</th>
+   <th>Pause</th>
+   
+   
+</tr>
+   
+ <tr>
+ <th>10:05-10:50</th>
+   <th>3.Stunde</th>
+   <th bgcolor="yellow">Mathematik</th>
+   <th bgcolor="red">Deutsch</th>
+   <th bgcolor="orange">Englisch</th>
+   <th bgcolor="green">Chemie</th>
+   <th bgcolor="yellow">Mathematik</th>
+   
+ </tr>
+
+ <tr>
+ <th>10:55-11:40</th>
+   <th>4.Stunde</th>
+   <th bgcolor="orange">Englisch</th>
+   <th bgcolor="blue">Musik</th>
+   <th bgcolor="purple">Gesellschaftslehre</th>
+   <th bgcolor="green">Chemie</th>
+   <th bgcolor="orange">Englisch</th>
+   
+ </tr>
+ 
+ <tr>
+ <th>11:55-12:40</th>
+   <th>Pause</th>
+   
+   
+   
+   
+ </tr>
+ 
+ <tr>
+ <th>12:40-13:25</th>
+   <th>6.Stunde</th>
+   <th bgcolor="yellow">Mathematik</th>
+   <th bgcolor="purple">Gesellschaftslehre</th>
+   <th>Lernen für das Leben</th>
+   <th bgcolor="grey">WP fach</th>
+  
+ </tr>
+ 
+ <tr>
+ <th>13:30-14:15</th>
+   <th>7.Stunde</th>
+   <th bgcolor="blue">Musik</th>
+   <th>Lernzeit</th>
+ </tr>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ &copy; <span Style="font-size:10pt">2016 Mehmet</span>
+
+
+
+</body>
+</html>

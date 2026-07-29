@@ -1,0 +1,28 @@
+<html> 
+<head>
+    <title>Zeugnisdurchnitt</title>
+</head>
+<body bgcolor="sandybrown">
+<h1> Berechnung der Durchnittstemperatur von einem bestimmten Monat </h1>
+
+<script language="javascript">
+var prompt1 = prompt("Wie viele Tage?");
+var Durchnittsnote = 0;
+
+var index = [];
+for(var i = 1; i <= Number(prompt1); i++) {
+    var day =  prompt("Geben Sie den " + i + ". Tag ein: ");
+    Durchnittsnote = Durchnittsnote + Number(day);
+    index[i] = day;
+}
+
+for(var i = 1; i < index.length; i++) {
+    document.write(i + ". Tag: " + index[i]) + "C°";
+    document.write("<br>");
+}
+Durchnittsnote /= index.length-1;
+document.write("Ihre Durchnittstemperatur beträgt: " + Durchnittsnote + "°C");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+g++ main.cpp oneplusone.cpp -o programm

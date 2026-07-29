@@ -1,0 +1,141 @@
+<html>
+<head>
+<title> StundenPlan </title>
+</head>
+
+<style type="text/CSS">
+ body {background-color:Black}
+
+</style>
+ 
+
+ 
+
+<table style="background-color:#ffa400;" border="1" widh="75%" height="1%" cellspacing="1" cellpadding="30">
+<center>
+<p style="font-size:50px; color:black;">StundenPlan für Heute.</p>
+</center>
+
+<script type="text/javascript">
+        monate = new Array("Januar","Februar","März","April",
+          "Mai","Juni","Juli","August","September","Oktober",
+          "November","Dezember");
+        wochentage = new Array("Sonntag","Montag","Dienstag",
+          "Mittwoch","Donnerstag","Freitag","Samstag");
+        datum = new Date();
+        wtg = datum.getDay();
+        tag = datum.getDate();
+        mon = datum.getMonth();
+        jhr = datum.getFullYear();
+        ausgabe = wochentage[wtg]+", der "+tag+". "+monate[mon]+" "+jhr;
+        document.write(ausgabe);
+    </script>
+
+
+
+ <tr>
+ 
+   <th></th>
+ 
+   <th>Montag</th>
+   <th>Dienstag</th>
+   <th>Mittwoch</th>
+   <th>Donnerstag</th>
+   <th>Freitag</th>
+   <th></th>
+ </tr>
+
+ <tr>
+   <th>1.Stunde</th>
+   <th>Sport</th>
+   <th>Mathematik</th>
+   <th>Deutsch</th>
+   <th>Deutsch</th>
+   <th>WP fach</th>
+   <th>8:10-8:55</th>
+ </tr>
+ 
+<tr>
+   <th>2.Stunde</th>
+   <th>Sport</th>
+   <th>Gesellschaftslehre</th>
+   <th>Deutsch</th>
+   <th>Englisch</th>
+   <th>WP fach</th>
+   <th>9:00-9:45</th>
+ </tr>
+ 
+ <tr>
+   <th>Pause</th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th>9:45-10:05</th>
+</tr>
+   
+ <tr>
+   <th>3.Stunde</th>
+   <th>Mathematik</th>
+   <th>Deutsch</th>
+   <th>Englisch</th>
+   <th>Chemie</th>
+   <th>Mathematik</th>
+   <th>10:05-10:50</th>
+ </tr>
+
+ <tr>
+   <th>4.Stunde</th>
+   <th>Englisch</th>
+   <th>Musik</th>
+   <th>Gesellschaftslehre</th>
+   <th>Chemie</th>
+   <th>Englisch</th>
+   <th>10:55-11:40</th>
+ </tr>
+ 
+ <tr>
+   <th>Pause</th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th>11:55-12:40</th>
+   
+   
+   
+ </tr>
+ 
+ <tr>
+   <th>6.Stunde</th>
+   <th>Mathematik</th>
+   <th>Gesellschaftslehre</th>
+   <th>Lernen für das Leben</th>
+   <th>WP fach</th>
+   <th></th>
+   <th>12:40-13:25</th>
+ </tr>
+ 
+ <tr>
+   <th>7.Stunde</th>
+   <th>Musik</th>
+   <th>Lernzeit</th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th>13:30-14:15</th>
+ </tr>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <center>
+ <A HREF ="StundenPlan.html">WhiteMode</A><br>
+ </center>
+</body>
+</html>

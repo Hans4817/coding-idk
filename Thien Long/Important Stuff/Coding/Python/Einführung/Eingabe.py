@@ -1,0 +1,5 @@
+
+
+print("Bitte einen Text eingeben")
+x = input()
+print("Ihe Eingabe:", x)

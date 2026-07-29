@@ -1,0 +1,11 @@
+<html>
+<body>
+<p>Bitte tragen sie Ihren Vornamen und Ihren Nachnamen ein.<br/>Senden sie anschließend das Formular ab.</p>
+<form action = "Begruessung.php" method = "post">
+<p><input name = "vor" /> Vorname</p>
+<p><input name = "nach" /> Nachname</p>
+<p><input type = "submit" />
+<input type = "reset" /></p>
+</form>
+</body>
+</html>

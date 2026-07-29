@@ -1,0 +1,48 @@
+
+<!doctype html public "-//w3c//dtd html 3.2//en">
+
+<html>
+
+<head>
+<title>2 hoch x Generator 2<sup>1</sup> bis 2<sup>480</sup>Javascript www.hbnweb.de</title>
+
+<meta name="GENERATOR" content="Arachnophilia 4.0">
+<meta name="FORMATTER" content="Arachnophilia 4.0">
+</head>
+
+<body>
+
+
+
+<div style="position:absolute;left:1;top:450;">
+<table border="2" bordercolor="blue">
+<tr><td><script language="javascript" src="https://www.hbnweb.de/hbns.js"></script></td></tr></table></div>
+
+<div style="position:absolute;right:1;top:450;">
+<table border="2" bordercolor="blue">
+<tr><td><script language="javascript" src="https://www.hbnweb.de/hbns.js"></script></td></tr></table></div>
+
+
+
+
+
+<center><h1>2 hoch x Generator 2<sup>1</sup> bis 2<sup>480</sup></h1>
+Auch Ihr Rechner rechnet mit gro&szlig;en Zahlen<br>
+<b>Bei der Frage "Ausf&uuml;hrung des Skripts abbrechen?" dr&uuml;cken Sie den Button "Nein" !</b>
+<br><input type="button" value="Habe ich einen Einflu&szlig; auf diese Meldung ?" onClick="location.href='ausfuehrung-des-skripts-abbrechen.html'";><br><br>
+
+
+<script language="javascript">t=4804; z=0;a = new Array();a[0]=1;
+for(n=1;n<=t;n++){document.write("2<sup>"+n+"</sup> = ");
+                       for(m=0;m<=z;m++){if((a[z]>=4)&&(m==z)){a[z+1]=0;}a[m]=a[m]*2;}
+                       for(m=0;m<=z;m++){if(a[m]>9){a[m]=a[m]-10;a[m+1]=a[m+1]+1;}}if(a[m]>0){z=m;}
+for(k=z;k>=0;k--){document.write(a[k]);}document.write("<br>");}</script>
+ <br>     <br>
+
+
+ <br><a href='https://www.hbnweb.de/pressum.html'>Impressum</a>&nbsp;&nbsp;&nbsp;<a href='https://www.hbnweb.de/'>Startseite</a>
+
+
+</body>
+
+</html>

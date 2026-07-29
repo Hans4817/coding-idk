@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- Datum und Uhrzeit -->
+<html>
+  <head>
+    <title>Listing 4.4</title>
+    <script type="text/javascript">
+        datum = new Date();
+        std = datum.getHours();
+        min = datum.getMinutes();
+        sek = datum.getSeconds();
+        tag = datum.getDate();
+        mon = datum.getMonth() + 1;
+        jhr = datum.getYear();
+        document.write("<h3>Datum: "+tag+"."+mon+"."+jhr+"</h3>");
+        document.write("<h3>Uhrzeit: "+std+":"+min+":"+sek+"</h3>");
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

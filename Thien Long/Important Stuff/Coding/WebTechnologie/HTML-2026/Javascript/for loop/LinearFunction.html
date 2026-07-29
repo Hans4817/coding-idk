@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Linear Function</title>
+</head>
+<body>
+	<h1>Lineare Funktion</h1>
+	<p>f(x) = &plusmn; mx &plusmn; b
+	</p>
+	<script>
+	let m, b, Start, End, Inkre;
+	m = prompt("f(x) = mx + b | Geben Sie m ein: ");
+	b = prompt("f(x) = " + m + "x" + " + b | Geben Sie b ein: ");
+	Start = prompt("Geben Sie Start ein: ");
+	End = prompt("Geben Sie End ein: ");
+	Inkre = prompt("Geben Sie die Schritte ein: ");
+
+	document.write("x | funktion | f(x)" + "<br>");
+	for(let i = Number(Start); i <= Number(End); i += Number(Inkre)) {
+		document.write(i + " | " + m + "*" + i + " + " + b + " | " + (Number(m)*Number(i)+Number(b)));
+		document.write("<br>");
+	}
+	</script>
+</body>
+</html>

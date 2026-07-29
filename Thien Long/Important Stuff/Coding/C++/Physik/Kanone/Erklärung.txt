@@ -1,0 +1,36 @@
+Einbinden der Bibliotheken: #include <iostream> und #include <cmath> binden die Standardbibliotheken für Ein-/Ausgabe und mathematische Funktionen ein.
+
+Definition des Hauptprogramms: int main() { ... } definiert das Hauptprogramm. Alles innerhalb der geschweiften Klammern {} wird ausgeführt, wenn das Programm gestartet wird.
+
+Deklaration der Variablen: float grad, geschwindigkeit, sekunden; deklariert die Variablen grad, geschwindigkeit und sekunden als Fließkommazahlen.
+
+Eingabeaufforderungen und Eingabelesen: Der Benutzer wird aufgefordert, Werte für grad, geschwindigkeit und sekunden einzugeben. Diese Werte werden dann mit cin >> gelesen.
+
+Berechnung des Radiant: float radiant = grad * pi / 180; konvertiert den Gradwert in Radiant, was für die trigonometrischen Funktionen benötigt wird.
+
+Berechnung der Geschwindigkeitskomponenten: float vx = geschwindigkeit * cos(radiant); und float vy = geschwindigkeit * sin(radiant); berechnen die x- und y-Komponenten der Geschwindigkeit basierend auf dem eingegebenen Grad und der Geschwindigkeit.
+
+Initialisierung der Zeit: float t = 0; initialisiert die Zeitvariable t auf 0.
+
+While-Schleife: while (t <= sekunden) { ... } führt den Code innerhalb der geschweiften Klammern {} aus, solange die aktuelle Zeit t kleiner oder gleich der vom Benutzer eingegebenen Anzahl von Sekunden ist.
+
+Ausgabe der Werte: Innerhalb der while-Schleife wird die aktuelle Zeit, die zurückgelegte Entfernung und die Geschwindigkeiten in x- und y-Richtung ausgegeben.
+
+Zeitaktualisierung: Nach jeder Ausgabe wird die Zeit t um 0.1 Sekunden erhöht.
+
+Die Formeln im Code sind:
+
+float radiant = grad * pi / 180; - Umrechnung von Grad in Radiant.
+float vx = geschwindigkeit * cos(radiant); - Berechnung der x-Komponente der Geschwindigkeit.
+float vy = geschwindigkeit * sin(radiant); - Berechnung der y-Komponente der Geschwindigkeit.
+vx*t - Berechnung der zurückgelegten Entfernung.
+vy - 9.81*t - Berechnung der Geschwindigkeit in y-Richtung unter 
+Berücksichtigung der Erdbeschleunigung.
+
+Die Geschwindigkeitskomponenten vx und vy repräsentieren die Geschwindigkeit der Kanonenkugel in x- und y-Richtung zu Beginn des Fluges.
+
+Wenn eine Kanonenkugel (oder irgendein Objekt) in einem Winkel abgefeuert wird, bewegt sie sich sowohl horizontal (x-Richtung) als auch vertikal (y-Richtung). Die Gesamtgeschwindigkeit der Kugel wird in diese zwei Komponenten aufgeteilt:
+
+vx = geschwindigkeit * cos(radiant) ist die horizontale Geschwindigkeitskomponente. Sie bleibt während des gesamten Fluges konstant, da wir Luftwiderstand ignorieren.
+vy = geschwindigkeit * sin(radiant) ist die vertikale Geschwindigkeitskomponente. Sie ändert sich während des Fluges aufgrund der Schwerkraft.
+Diese Komponenten werden verwendet, um die Position der Kanonenkugel zu verschiedenen Zeitpunkten während des Fluges zu berechnen. Die horizontale Position wird mit vx*t und die vertikale Geschwindigkeit mit vy - 9.81*t berechnet. Hierbei ist t die Zeit und 9.81 die Erdbeschleunigung.

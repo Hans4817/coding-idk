@@ -1,0 +1,11 @@
+<html>
+<body>
+<?php
+if ($_POST["pw"] == "blackballs")
+	echo "Zugang gestattet";
+else
+    echo "Zugang verweigert";
+
+?>
+</body>
+</html>

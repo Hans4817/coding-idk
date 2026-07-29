@@ -1,0 +1,28 @@
+<html>
+<head>
+<title> a </title>
+</head>
+<body>
+<script type="text/javascript">
+var i=1;
+var s=1;
+var n;
+n = prompt("Geben sie ein Fagutet ein.");    
+while (i<=n) {
+s = s * i;
+i++;
+   
+}
+    
+    
+    
+document.write(+n+"!"  + "=" + s );
+
+
+</script>
+
+
+
+
+</body>
+</html>

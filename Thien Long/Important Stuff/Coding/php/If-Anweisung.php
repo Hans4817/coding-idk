@@ -1,0 +1,9 @@
+<?php
+$stunde = date("G");
+if ($stunde >= 20) {
+	print("Höchste Zeit, die Arbeit einzustellen");
+}
+else {
+	print("Arbeite du Eselkartoffel");
+}
+?>

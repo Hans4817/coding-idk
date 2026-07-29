@@ -1,0 +1,38 @@
+<?php
+   function add($x,$y)
+   {
+	   $s = $x + $y;
+	   return $s;
+   }
+   function sub($x,$y)
+   {
+	   $s = $x - $y;
+	   return $s;
+   }
+   function mult($x,$y)
+   {
+	   $s = $x * $y;
+	   return $s;
+   }
+   function divi($x,$y)
+   {
+	   $s = $x / $y;
+	   return $s;
+   }
+?>
+
+<?php
+if ($_POST["oper"] == "+")
+	$erg = add($_POST["w1"],$_POST["w2"]);
+
+else if ($_POST["oper"] == "-")
+	$erg = sub($_POST["w1"],$_POST["w2"]);
+
+else if ($_POST["oper"] == "*")
+	$erg = mult($_POST["w1"],$_POST["w2"]);
+
+else  
+	$erg = divi($_POST["w1"],$_POST["w2"]);
+echo $_POST["w1"] . " " . $_POST["oper"]
+. " " . $_POST["w2"] . " = $erg";
+?>

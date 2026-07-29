@@ -1,0 +1,52 @@
+<html>
+<head>
+<title> Prozent </title>
+</head>
+<body>
+<h1> Prozent Rechnung </h1>
+<script type="text/javascript">
+var wota = prompt("Bitte geben sie die Operatorin ein.", "");
+var tag ="";
+var text;
+var W;
+var G;
+var p;
+
+wota = parseInt(wota);
+switch(wota) {
+
+case 1:
+G = prompt("Geben sie die Grundwert ein.");
+                   p = prompt("Geben sie die Prozentsatz ein.");
+				   W=G*p/100;
+				   document.write("Der Prozentwert ist:"+W);
+
+break;
+
+case 2:
+W = prompt("Geben sie die Prozentwert ein.");
+                   G = prompt("Geben sie die grundwert ein.");
+				   p=W*100/G;
+				   document.write("Der Prozentwert ist:"+p);
+break;
+
+case 3:
+
+break;
+W = prompt("Geben sie die Prozentwert ein.");
+                   p = prompt("Geben sie die Prozentsatz ein.");
+				   G=100/W*p;
+				   document.write("Der Prozentwert ist:"+G);
+
+
+default:
+
+}
+
+</script>
+
+
+
+
+</body>
+</html>

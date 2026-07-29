@@ -1,0 +1,95 @@
+Schwere Malware-Attacke an Gesamtschule Kaiserplatz: Hacker verhaftet und Sicherheitsmaßnahmen 
+verstärkt
+
+
+#include <iostream>
+using namespace std;
+
+int scheine[] = {5, 2, 1};
+
+void auszahlen(int restbetrag, int index, int kombination[]) {
+    if (restbetrag == 0) {
+        for (int i = 0; i < 3; ++i) {
+            if (kombination[i] > 0) {
+                cout << kombination[i] << " x " << scheine[i] << "-Euro";
+                if (i < 2 && (kombination[i + 1] > 0 || kombination[i + 2] > 0)) {
+                    cout << ", ";
+                }
+            }
+        }
+        cout << endl;
+        return;
+    }
+
+    if (index >= 3) return;
+
+    for (int i = 0; i <= restbetrag / scheine[index]; ++i) {
+        kombination[index] = i;
+        auszahlen(restbetrag - i * scheine[index], index + 1, kombination);
+    }
+    kombination[index] = 0;
+}
+
+int main() {
+    int Euro;
+    cout << "Geben Sie einen Geldbetrag ein: ";
+    cin >> Euro;
+
+    int kombination[3] = {0, 0, 0};
+    cout << "Moegliche Kombinationen zur Auszahlung des Betrags " << Euro << " Euro:\n";
+    auszahlen(Euro, 0, kombination);
+
+    return 0;
+}
+
+
+Am Donnerstagmittag, den 28. Mai 2020, wurde gegen 13 Uhr im Gesamtschule Kaiserplatz Krefeld, 
+Deutschland, eine der größten Malware-Attacke getroffen. Der Hacker wurde nach dem Angriff von der
+Polizei seinem Haus in Köln, Deutschland verhaftet und zur befragung auf die Polizei-Station
+gebracht.
+
+Die Malware-Attack, die am Donnerstagmittag stattgefunden hat, wurde die Schule zu ein Chaos,
+als die reguläre Unterricht unterbrechen musste, weil Bildschirme einfroren, Systeme nicht mehr
+funktionierte und wichtige Daten von der Schule langsam erloschen wurde. IT-Experten hatten
+währenddessen versucht, eine lösung zu finden, wie man die Malware dagegen bekämpft. Ohne erfolg.
+Klassen wurden in eine sichere bereich der Schule verlegt, während IT-Experten versuchten, die
+Auswirkungen von der Malware zu beheben. Nach 2 Stunden konnten die IT-Experten Gesamtschule 
+Kaiserplatz das Problem durch eine Sicherheitslücke der Malware beheben und alle Daten und Accounts 
+konnten rechtzeitig wiederherstellen.
+Die Malware-Attacke Donnerstagsmittag in Gesamtschule Kaiserplatz wurde laut IT-Experten
+90% aller Accounts von Schülern und Schulkräften betroffen sein.
+Daraufhin erwähnten sie, dass der Totalschaden etwa 50.000 $ betrug.
+Die Gesamtschule Kaiserplatz sowie die IT-Experten hatten die weitere 
+Sicherheitslücken behoben, um weitere	Malware-Attacken zu verhindern.
+Die Polizei setzte die Ermittlung durch und konnte nach paar Tagen die verantwortliche in Köln 
+finden, als der Verdächtige am späten Nachmittag in seinem Haus in Köln verhaftet wurde.
+und zur befragung in der Polizei-Station gebracht. Der Identität des Hackers wurde nicht
+bekannt gegeben. Der Hacker sagte in der befragung, dass er den Gesamtschule Kaiserplatz mit Malware 
+Attackiert hatte, weil er dachte, dass der Schule schlechte Sicherheit hatten und die nicht Sicher 
+sind. Daraufhin wurde das mit dem Sicherheit des Gesamtschule Kaiserplatz verständlich und haben 
+über 30.000 $ mit Sicherheit und Malware-Attacken Schutz für die Schule investiert. Laut Gericht des 
+Oberlandesgericht Kölner wurde der Hacker eine Strafe von 6 Jahre Gefängnis verurteilt.
+
+
+
+
+Kommentar:
+
+Wie können Schulen besser auf Cyberangriffe vorbereitet sein, um solche Vorfälle zu verhindern?
+
+Kinder können schlecht Unterrichtet werden, wenn Cyberangriffe dauerhaft auf die Schule
+betroffen wird. Wichtige Lerninhalte, Informationen und Dateien werden von 
+die einzelnen angriffe gelöscht und einzelne Computer werden durch diese angriffe beschädigt, 
+weil die meisten Schulen (inklusive. Gesantschule Kaiserplatz) nicht genug Sicherheit haben. 
+Auch sind die angriffe für die Schulen sehr teuer und kosten viel Zeit.
+Ich finde es ist sehr schlecht, dass die meisten Schulen nicht genug in die Sicherheit für die 
+digitale Unterricht Investieren, dass auch besonders die digitale Unterricht auch die neue zukunft 
+ist. Die Schulen sollen mehr Sicherheit für ihre System schaffen, damit Kindern sicher digital 
+Unterrichten können. Mehr Sicherheit - Weniger Stress.
+
+
+
+
+
+
+

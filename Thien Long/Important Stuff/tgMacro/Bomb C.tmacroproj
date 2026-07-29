@@ -1,0 +1,1 @@
+{"FileType":"TGMacro Project","Version":"2.0 Build:0","Macros":[{"Name":"Macro 1","Trigger":{"KeyPressMethod":2,"KeyboardKey":107,"MasterKey":0,"TriggerType":1},"Actions":[{"ActionType":2,"KeyPressMethod":1,"KeyboardKeyCode":67},{"ActionType":3,"WaitFor":5036},{"ActionType":2,"KeyPressMethod":2,"KeyboardKeyCode":67},{"ActionType":3,"WaitFor":82794}]}]}

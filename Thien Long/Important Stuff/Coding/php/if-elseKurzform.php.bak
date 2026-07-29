@@ -1,0 +1,5 @@
+<?php
+$Grenze = 19;
+$Alter = 18;
+$Alter > ($Grenze) ? print("Sie sind volljährig") : print("Sie sind nicht volljährig");
+?>

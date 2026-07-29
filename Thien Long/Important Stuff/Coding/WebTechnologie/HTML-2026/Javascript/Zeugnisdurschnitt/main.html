@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notenrechner</title>
+</head>
+<body>
+<script language="javascript">
+var Deutsch, Englisch, Mathe, Informatik, Physik, Religion, Sport, Chemie, Gesellschaftslehre, Niederlaendisch, Kunst;
+
+Deutsch = prompt("Bitte geben Sie die Deutsch-Note ein: ");
+document.write("Deine Note in Deutsch: " + Deutsch + "<br>");
+
+Englisch = prompt("Bitte geben Sie die Englisch-Note ein: ");   
+document.write("Deine Note in Englisch: " + Englisch + "<br>");
+
+Mathe = prompt("Bitte geben Sie die Mathe-Note ein: ");
+document.write("Deine Note in Mathe: " + Mathe + "<br>");
+
+Informatik = prompt("Bitte geben Sie die Informatik-Note ein: ");
+document.write("Deine Note in Informatik: " + Informatik + "<br>");
+
+Physik = prompt("Bitte geben Sie die Physik-Note ein: ");
+document.write("Deine Note in Physik: " + Physik + "<br>");
+
+Religion = prompt("Bitte geben Sie die Religions-Note ein: ");
+document.write("Deine Note in Religion: " + Religion + "<br>");
+
+Sport = prompt("Bitte geben Sie die Sport-Note ein: ");
+document.write("Deine Note in Sport: " + Sport + "<br>");
+
+Chemie = prompt("Bitte geben Sie die Chemie-Note ein: ");
+document.write("Deine Note in Chemie: " + Chemie + "<br>");
+
+Gesellschaftslehre = prompt("Bitte geben Sie die Gesellschaftslehre-Note ein: ");
+document.write("Deine Note in Gesellschaftslehre: " + Gesellschaftslehre + "<br>");
+
+Niederlaendisch = prompt("Bitte geben Sie die Niederländisch-Note ein: ");
+document.write("Deine Note in Niederländisch: " + Niederlaendisch + "<br>");
+
+Kunst = prompt("Bitte geben Sie die Kunst-Note ein: ");
+document.write("Deine Note in Kunst: " + Kunst + "<br><br>");
+
+var Durchschnitt;
+Durchschnitt = (
+    Number(Deutsch) + 
+    Number(Englisch) + 
+    Number(Mathe) + 
+    Number(Informatik) + 
+    Number(Physik) + 
+    Number(Religion) + 
+    Number(Sport) + 
+    Number(Chemie) + 
+    Number(Gesellschaftslehre) + 
+    Number(Niederlaendisch) + 
+    Number(Kunst)
+) / 11;
+
+// 4. Endergebnis anzeigen
+document.write("Deine Durchschnittsnote: " + Durchschnitt.toFixed(2));
+
+</script>
+</body>
+</html>

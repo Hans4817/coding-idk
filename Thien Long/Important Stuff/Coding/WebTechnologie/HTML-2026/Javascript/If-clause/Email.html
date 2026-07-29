@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Email = "Long@gmail.com", Password = "Hallo";
+        let EmailInput, PasswordInput;
+        let Success = true;
+
+        EmailInput = window.prompt(
+            "Geben Sie Ihre E-Mail ein:"
+        );
+                
+        PasswordInput = window.prompt(
+            `E-Mail: ${EmailInput}\n` +
+            "Geben Sie Ihr Passwort ein:"
+        );
+
+        while(Success) {
+            if(EmailInput === Email && PasswordInput === Password) {
+                document.write("Willkommen!");
+                Success = false;
+            }
+            else {
+                EmailInput = window.prompt(
+                    "Sie haben die falsche E-Mail oder das falsche Passwort eingegeben.\n" +  
+                    "Geben Sie Ihre E-Mail ein:"
+                );
+                
+                PasswordInput = window.prompt(
+                    `E-Mail: ${EmailInput}\n` +
+                    "Geben Sie Ihr Passwort ein:"
+                );
+            }
+        }
+    </script>
+</body>
+</html>

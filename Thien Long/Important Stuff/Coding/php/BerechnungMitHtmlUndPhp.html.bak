@@ -1,0 +1,11 @@
+<html>
+<body>
+<p>Bitte tragen sie gewuenschten Summe ein.</p>
+<form action = "BerechnungMitHtmlUndPhp.php" method = "post">
+<p><input name = "vor" /> 1. Summand</p>
+<p><input name = "nach" /> 2. Summand</p>
+<p><input type = "s" />
+<input type = "reset" /></p>
+</form>
+</body>
+</html>

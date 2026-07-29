@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- Besuchsdauer -->
+<html>
+  <head>
+    <title>Listing 5.3</title>
+    <script type="text/javascript">
+        start = new Date();
+        startzeit = start.getTime();
+
+        function stoppuhr()
+        {
+          aktuell = new Date();
+          zeit = (aktuell.getTime() - startzeit) / 1000;
+          document.besuch.dauer.value = Math.round(zeit);
+          setTimeout('stoppuhr()',1000);
+        }
+    </script>
+  </head>
+  <body onLoad="setTimeout('stoppuhr()',0)">
+    <form name="besuch">
+      Sie sind seit <input name="dauer" size="10"> Sekunden auf dieser Seite.
+    </form>
+  </body>
+</html>

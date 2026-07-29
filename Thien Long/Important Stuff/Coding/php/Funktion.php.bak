@@ -1,0 +1,76 @@
+<?PHP
+echo '<b>Datum:</b><br>';
+echo date("d D M Y");
+echo'<br>';
+echo'<hr>';
+?>
+
+<?PHP
+echo '<b>Protenzrechnung:</b><br>';
+echo pow(2,10);
+echo'<br>';
+echo'<hr>';
+?>
+
+<?PHP
+echo '<b>Wurzelberechnung:</b><br>';
+echo sqrt(2);
+echo'<br>';
+echo'<hr>';
+?>
+
+<?PHP
+echo '<b>Exponinentialberechnung:</b><br>';
+echo exp(1);
+echo'<br>';
+echo'<hr>';
+?>
+
+<?PHP
+echo '<b>Logaritmustrechnung:</b><br>';
+echo log(2);
+echo'<br>';
+echo'<hr>';
+?>
+
+<?PHP
+echo '<b>Dezimalzahl in Binärzahl umwandeln:</b><br>';
+echo decbin(42);
+echo'<hr>';
+?>
+
+<?PHP
+echo '<b>Dezimalzahl in Hexazahl umwandeln:</b><br>';
+echo dechex(42);
+echo'<br>';
+echo'<hr>';
+?>
+
+<?PHP
+echo '<b>Dezimalzahl in Oktalzahl umwandeln:</b><br>';
+echo decoct(42);
+echo'<br>';
+echo'<hr>';
+?>
+
+<?PHP
+echo '<b>Mit max() kann man sich den größten Wert der :</b><br>';
+$array = array(3532,62,187,69,1877);
+echo max($array);
+
+echo'<br>';
+echo'<hr>';
+?>
+
+<?PHP
+echo '<b>Mit max() kann man sich den kleinsten Wert der :</b><br>';
+$array = array(3532,62,187,69,1877);
+echo min($array);
+
+echo'<br>';
+echo'<hr>';
+?>
+
+<?php
+phpinfo();
+?>

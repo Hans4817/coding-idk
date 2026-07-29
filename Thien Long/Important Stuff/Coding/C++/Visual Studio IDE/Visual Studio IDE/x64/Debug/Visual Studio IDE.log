@@ -1,0 +1,3 @@
+﻿  BinomischeFormeln.cpp
+D:\Important Stuff\Coding\C++\Binomische Formeln\BinomischeFormeln.cpp(21,18): warning C4244: "Initialisierung": Konvertierung von "long double" in "int", möglicher Datenverlust
+  Visual Studio IDE.vcxproj -> D:\Important Stuff\Coding\C++\Visual Studio IDE\x64\Debug\Visual Studio IDE.exe

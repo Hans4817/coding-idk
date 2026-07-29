@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zinseszins-Rechner</title>
+</head>
+<body>
+    <script>
+        // Convert inputs from strings to numbers
+        let P = prompt("Bitte geben Sie Ihr Startkapital (P) ein:");
+        let r = prompt("Bitte geben Sie Ihre jährliche Rendite (r in %) ein:");
+        let t = prompt("Bitte geben Sie Ihre Anlagedauer (t in Jahren) ein:");
+
+        document.write("Jahr | Kapital zu Jahresbeginn | Zinsertrag (" + r + "%) | Endkapital<br><br>");
+
+        for (let i = 1; i <= Number(t); i++) {
+            let zinsertrag = Number(P) * (Number(r) / 100);
+            let endkapital = Number(P) + Number(zinsertrag);
+
+            document.write(
+                i + " | " + 
+                Number(P).toFixed(2) + " € | " + 
+                Number(zinsertrag).toFixed(2) + " € | " + 
+                Number(endkapital).toFixed(2) + " €<br>"
+            );
+
+            P = endkapital;
+        }
+    </script>
+</body>
+</html>

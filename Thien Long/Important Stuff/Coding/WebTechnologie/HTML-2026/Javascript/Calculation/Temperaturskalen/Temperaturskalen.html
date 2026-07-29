@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div align="center">
+        <table border="1">
+            <tr>
+                <td>
+                    <p align = "center"> 273,15 K </p>
+                </td>
+                <td>
+                    <p align = "center"> 0°C </p>
+                </td>
+                <td>
+                    <p align = "center"> 32° </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p align = "center"> Tk = Tc + 273,15 </p>
+                </td>
+                <td>
+                    <p align = "center"> Tc = 5/9(Tf - 32) </p>
+                </td>
+                <td>
+                    <p align = "center"> Tf = 9/5 * Tc + 32</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <p><input id = "Kelvin">K</input></p>
+    <p><input id = "Celcius">°C</input></p>
+    <p><input id = "Fahrenheit">°F</input></p>
+
+    <button onclick="CalculateTemperature()">Click Me</button>
+    <p id = "result">Original Output: </p>
+
+
+    <script>
+        function CalculateTemperature() {
+            let K = parseFloat(document.getElementById("Kelvin").innerText);
+            let C = parseFloat(document.getElementById("Celcius").innerText);
+            let F = parseFloat(document.getElementById("Fahrenheit").innerText);
+
+            let temporary = "Output: " + 
+            K   + 
+            " |" + 
+            C   + 
+            " |" + 
+            F 
+            document.getElementById("result").innerText = temporary;
+        }
+    </script>
+</body>
+</html>

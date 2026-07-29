@@ -1,0 +1,21 @@
+<html>
+<head>
+<title> r </title>
+<body bgcolor="red">
+<table border="1" widh="75%" height="25%" cellspacing="30" cellpadding="30">
+<caption allign="bottom">Stundeplan </caption>
+<tr>
+<color = "red">
+   <th>Mathematik</th>
+   <th>Deutsch</th>
+   <th>Informatik</th>
+   <th>Naturwissenschaft</th>
+   <th>Physik</th>
+   <th>Politik</th>
+   <th>Gesselschaftslehre</th>
+   <th>Lernen fürs Leben</th>
+   <th>Englich</th>
+   <th>Musik</th>
+</tr>
+</body>
+</html>

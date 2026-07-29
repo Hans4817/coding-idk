@@ -1,0 +1,3 @@
+<?php
+echo"Vielen Dank für dein Feedback! Wir wünchen Ihnen noch ein schönen Tag.";
+?>

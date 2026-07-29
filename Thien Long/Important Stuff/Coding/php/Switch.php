@@ -1,0 +1,26 @@
+<?php
+$datum = getdate();
+$stunde = $datum["hours"];
+switch ($stunde) {
+	case 11:
+	print "Hinterm Mond gleich links";
+	break;
+	case 12:
+	print "King of Queens";
+	break;
+	case 13:
+	print "Eine schrecklich nette Familie";
+	break;
+	case 14:
+	print "Bill Cosby Show";
+	break;
+	case 15:
+	print "Roseanne";
+	break;
+	case 16:
+	print "Abenteuer Allag";
+	break;
+	default:
+	print "Genug gefaulenzt, weiterarbeiten!";
+}
+?>

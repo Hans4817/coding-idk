@@ -1,0 +1,5 @@
+﻿  indx.cpp
+D:\Important Stuff\Coding\C++\Visual Studio IDE\Visual Studio IDE\indx.cpp(15,2): error C2562: "max": "void"-Funktion gibt einen Wert zurück
+      D:\Important Stuff\Coding\C++\Visual Studio IDE\Visual Studio IDE\indx.cpp(14,6):
+      Siehe Deklaration von "max"
+  
