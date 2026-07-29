@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <!-- Zinssatz -->
+            <td> 
+                <p>Zinssatz: </p>
+                <p><input type="number" id="Zinssatz">%</p>
+            </td>
+            <!-- Kreditbetrag -->
+            <td> 
+                <p>Kreditbetrag: </p>
+                <p><input type="number" id="Kreditbetrag"> Euro</p>
+            </td>
+            <!-- Zahlung -->
+            <td> 
+                <p>Zahlung: </p>
+                <p><input type="number" id="Zahlung"> Euro</p>
+            </td>
+        </tr>
+    </table>
+    <button id="onClickButton"> Berechnen </button>
+
+    <script>
+        function onClick() {
+            const Zinssatz = document.getElementById("Zinssatz").valueAsNumber;
+            const Kreditbetrag = document.getElementById("Kreditbetrag").valueAsNumber;
+            const Zahlung = document.getElementById("Zahlung").valueAsNumber;
+
+            document.write("Jahr | Zinsen | Tilgung | Zahlung | Restschuld <br>");
+
+            let Restschuld = Kreditbetrag;
+            let Jahr = 1;
+            while(Restschuld >= 0) {
+                let Zinsen = Restschuld * (Zinssatz / 100);
+                let Tilgung = Zahlung - Zinsen;
+                Restschuld = Restschuld - Tilgung;
+                // output
+                document.write(
+                    Jahr + " | " +
+                    Zinsen.toFixed(2) + " | " +
+                    Tilgung.toFixed(2) + " | " +
+                    Zahlung.toFixed(2) + " | " +
+                    Restschuld.toFixed(2)
+                )
+                document.write("<br>");
+                Jahr++;
+            }
+        }
+        const onClickButton = document.getElementById("onClickButton");
+        onClickButton.addEventListener("click", onClick);
+    </script>
+</body>
+</html>

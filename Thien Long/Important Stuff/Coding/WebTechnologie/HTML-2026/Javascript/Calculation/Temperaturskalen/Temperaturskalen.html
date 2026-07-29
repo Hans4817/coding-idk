@@ -3,58 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Temperature Converter</title>
 </head>
 <body>
     <div align="center">
         <table border="1">
             <tr>
-                <td>
-                    <p align = "center"> 273,15 K </p>
-                </td>
-                <td>
-                    <p align = "center"> 0°C </p>
-                </td>
-                <td>
-                    <p align = "center"> 32° </p>
-                </td>
+                <td><p align="center"> 273,15 K </p></td>
+                <td><p align="center"> 0°C </p></td>
+                <td><p align="center"> 32° </p></td>
             </tr>
             <tr>
-                <td>
-                    <p align = "center"> Tk = Tc + 273,15 </p>
-                </td>
-                <td>
-                    <p align = "center"> Tc = 5/9(Tf - 32) </p>
-                </td>
-                <td>
-                    <p align = "center"> Tf = 9/5 * Tc + 32</p>
-                </td>
+                <td><p align="center"> Tk = Tc + 273,15 </p></td>
+                <td><p align="center"> Tc = 5/9(Tf - 32) </p></td>
+                <td><p align="center"> Tf = 9/5 * Tc + 32</p></td>
             </tr>
         </table>
+
+        <!-- Fixed self-closing inputs and ID spelling -->
+        <p><input type="number" id="kelvin"> K</p>
+        <p><input type="number" id="celsius"> °C</p>
+        <p><input type="number" id="fahrenheit"> °F</p>
+
+        <button id="ClickForOutput">Click for output</button>
+        <p id="result">Original Output: </p>
     </div>
 
-    <p><input id = "Kelvin">K</input></p>
-    <p><input id = "Celcius">°C</input></p>
-    <p><input id = "Fahrenheit">°F</input></p>
-
-    <button onclick="CalculateTemperature()">Click Me</button>
-    <p id = "result">Original Output: </p>
-
-
     <script>
-        function CalculateTemperature() {
-            let K = parseFloat(document.getElementById("Kelvin").innerText);
-            let C = parseFloat(document.getElementById("Celcius").innerText);
-            let F = parseFloat(document.getElementById("Fahrenheit").innerText);
+        function calculateTemperature() {
+            const kelvinInput = document.getElementById("kelvin");
+            const celsiusInput = document.getElementById("celsius");
+            const fahrenheitInput = document.getElementById("fahrenheit");
 
-            let temporary = "Output: " + 
-            K   + 
-            " |" + 
-            C   + 
-            " |" + 
-            F 
-            document.getElementById("result").innerText = temporary;
+            let k = kelvinInput.valueAsNumber;
+            let c = celsiusInput.valueAsNumber;
+            let f = fahrenheitInput.valueAsNumber;
+
+            // Calculate missing values based on whichever field was filled
+            if (!isNaN(c)) {
+                k = c + 273.15;
+                f = (9 / 5) * c + 32;
+            } else if (!isNaN(k)) {
+                c = k - 273.15;
+                f = (9 / 5) * c + 32;
+            } else if (!isNaN(f)) {
+                c = (5 / 9) * (f - 32);
+                k = c + 273.15;
+            } else {
+                document.getElementById("result").textContent = "Please enter a value.";
+                return;
+            }
+
+            const output = `Output: ${k.toFixed(2)} K | ${c.toFixed(2)} °C | ${f.toFixed(2)} °F`;
+            document.getElementById("result").textContent = output;
         }
+
+        // Fixed case-sensitivity here (calculateTemperature)
+        const button = document.getElementById("ClickForOutput");
+        button.addEventListener("click", calculateTemperature);
     </script>
 </body>
 </html>
