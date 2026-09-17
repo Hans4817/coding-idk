@@ -1,7 +1,7 @@
 let result = document.getElementById("result");
 
 let decimalInput = parseInt(window.prompt("Geben Sie Dezimalzahl ein: "));
-let decimalTempelate = decimalInput.toString();
+const decimalTempelate = decimalInput.toString();
 
 let array = [];
 for(let i = 10; i >= 0; i--) { // initialize array for pow(2, 1) till pow(2, 10)
